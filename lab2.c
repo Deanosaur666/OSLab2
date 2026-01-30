@@ -69,7 +69,7 @@ int main() {
         // run command with execvp
         else {
             printf("Child %d (PID: %d) will execute command \"%s.\"\n", c, cpid, args[0]);
-            execvp(args[0], args);
+            return execvp(args[0], args);
         }
     }
     // parent
